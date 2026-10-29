@@ -1,24 +1,26 @@
 # Donjon de poche
 
-Explore un donjon au tour par tour. Chaque pas fait avancer les monstres : récupère les trésors, ménage tes potions et rejoins l’escalier.
+Explore un donjon plongé dans le noir. Trouve la clé et la sortie, lis les intentions des monstres et choisis quand dépenser ton huile, tes potions et tes pièces.
 
 **Android 7.0+ avec Android System WebView à jour · 100 % hors ligne dans l’APK · Sans compte · Sans publicité · MIT**
 
 - [Jouer sur la page du jeu](https://zachiran42.github.io/donjon-de-poche/)
-- [Télécharger l’APK signé de test](docs/downloads/donjon-de-poche-1.0.0.apk)
+- [Télécharger l’APK signé de test](docs/downloads/donjon-de-poche-1.1.0.apk)
 - [Signaler un problème](https://github.com/Zachiran42/donjon-de-poche/issues)
 
 ## Jouer
 
-1. Touche une case voisine pour te déplacer ou attaquer.
-2. Après ton action, les monstres jouent leur tour.
-3. Récupère les ressources et atteins les étages suivants.
+1. Tapote les flèches ou une direction autour du héros. Chaque action avance un tour.
+2. La torche révèle les environs ; le rouge annonce une frappe au prochain tour.
+3. À l’autel, choisis entre soin, lumière et lame. Garde de l’huile pour explorer.
 
-Sur ordinateur : flèches, WASD ou ZQSD. Échap met le jeu en pause. Une partie en cours et la progression sont conservées localement. Les données de la démo web et celles de l’APK sont indépendantes.
+TÉLÉPHONE · Flèches + actions à l’écran · CLAVIER · Flèches / ZQSD · E potion · F huile · ENTRÉE · Attendre · ÉCHAP · Pause
+
+La progression reste stockée localement. Les règles de la version1.1 changent : les anciennes parties en cours redémarrent, les déblocages et améliorations permanentes sont conservés.
 
 ## Installer sur Android
 
-Télécharger l’APK depuis ce dépôt ou sa page. Ouvrir le fichier sur Android et autoriser l’installation pour l’application utilisée pour le téléchargement si Android le demande. L’APK 1.0.0 est une version de test signée avec une clé de développement. Une signature de production stable est recommandée avant une distribution durable.
+Télécharger l’APK depuis ce dépôt ou sa page. Ouvrir le fichier sur Android et autoriser l’installation pour l’application utilisée pour le téléchargement si Android le demande. L’APK 1.1.0 est une version de test signée avec une clé de développement. Une signature de production stable est recommandée avant une distribution durable.
 
 ## Développer et compiler
 
@@ -48,6 +50,10 @@ Aucune permission INTERNET dans le manifeste Android. Pas de télémétrie ni d�
 
 Le code, les graphismes procéduraux et les textes originaux sont sous [licence MIT](LICENSE). Le wrapper Gradle et les outils de compilation tiers conservent leurs propres licences.
 
-## Version 1.0.0
+## Version 1.1.0
 
-Première version jouable. Le comportement tactile et les performances peuvent varier selon le WebView Android de l’appareil.
+Version enrichie avec commandes et difficulté revues. Le comportement tactile et les performances peuvent varier selon le WebView Android de l’appareil.
+
+## Nouveautés 1.1.0
+
+Visibilité autour du héros avec occlusion des murs et mémoire assombrie du terrain. Les monstres et objets disparaissent hors de la lumière réelle. Torche consommable, huile, potions, ennemis à intentions annoncées et autel offrant un choix payant exclusif entre soin, lumière et amélioration de la lame.
